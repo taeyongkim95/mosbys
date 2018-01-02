@@ -1,34 +1,11 @@
+// Written by Jacob Craffey and Taeyong Kim
+// Uses JQuery 
+
 $(document).ready(function(){
-
-  $("#flavors1").click(function() {
-    $("#dropdown-one").slideToggle();
-    $("#dropdown-two").slideUp();
-    $("#dropdown-three").slideUp();
-  });
-
-  $("#flavors2").click(function() {
-    $("#dropdown-one").slideUp();
-    $("#dropdown-two").slideToggle();
-    $("#dropdown-three").slideUp();
-  });
-
-  $("#flavors3").click(function() {
-    $("#dropdown-one").slideUp();
-    $("#dropdown-two").slideUp();
-    $("#dropdown-three").slideToggle();
-  });
-
-  $(".hide_tabs_button").click(function() {
-    $("#dropdown-one").hide();
-    $("#dropdown-two").hide();
-    $("#dropdown-three").hide();
-  });
 
   $('.flavor-popup').popup({
     transition: 'all 0.3s'
   });
-
-
 
   $('#feedback-popup').popup({
     transition: 'all 0.3s'
