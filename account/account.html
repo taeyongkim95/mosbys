@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+    <title>Mosby's Account</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="account-styles.css">
+    <script src="../fonts/gloria-font.js"></script>
+    <script src="../jquery-3.2.1.js"></script>
+    <script src="account.js"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div id="tabs">
+            <div id="logo_circle">
+                <a href="../index.html"><img class="tab_logo" src="../images/logo.png" /></a>
+            </div>
+            <button type="button" class="tab"> <a href="../index.html"> Home </a> </button>
+            <button type="button" class="tab"> <a href="../shop/shop.html"> Shop </a> </button>
+            <button type="button" class="tab"><a href="../social/social.html">Social Pop</a></button>
+            <button type="button" class="tab"><a href="../contact/contact.html">Contact</a></button>
+        </div>
+
+        <div id="search">
+            <img class="search_icon" src="../images/icons/tools/search.png">
+            <input type="search">
+        </div>
+        <div id="bag">
+  				<p id="notification">0</p>
+  				<img id="bag_icon" src="../images/icons/tools/bag.png">
+  			</div>
+        <div id="account">
+            <a href="account.html"><img class="icon" src="../images/icons/tools/account-new.png"></a>
+        </div>
+    </div>
+
+        <div id="profile">
+            <p id="title">
+                <span style="font-family:'Gloria'">A</span>ccount
+            </p>
+            <img id="picture" src="../images/account/account.png">
+            <div id="user-description">
+                <p id="name" class="description">John Smith</p>
+                <p id="location" class="description">Grand Rapids, MI</p>
+            </div>
+        </div>
+
+        <div id="account-menu">
+            <div id="options">
+                <button id="tab-wish-list" type="button" class="options-tab">Wish List</button>
+                <button id="tab-past-orders"type="button" class="options-tab">Past Orders</button>
+                <button id="tab-payment-options" type="button" class="options-tab">Payment Options</button>
+                <button id="tab-donations" type="button" class="options-tab">Donations</button>
+                <button id="tab-edit-settings" type="button" class="options-tab">Edit Settings</button>
+            </div>
+
+            <div id="wish-list-wrapper" class="submenu">
+                <div id="wish-list">
+                  <div id="list-wrapper">
+                    <ol>
+                      <li> <br> </li>
+                      <li> <br> </li>
+                      <li> <br> </li>
+                      <li> <br> </li>
+                      <li> <br> </li>
+                    </ol>
+                  </div>
+                </div>
+            </div>
+
+            <div id="payment-options-wrapper" class="submenu">
+                <div id="payment-options">
+                    <div id="card-wrapper">
+                        <div id="visa" class="card">
+                            <p>visa</p>
+                            <input type="radio" class="donate-radio" name="card-type">
+                        </div>
+                        <div id="mastercard" class="card">
+                            <p>mastercard</p>
+                            <input type="radio" class="donate-radio" name="card-type">
+                        </div>
+                        <div id="american-express" class="card">
+                            <p>america express</p>
+                            <input type="radio" class="donate-radio" name="card-type">
+                        </div>
+                        <div id="discover" class="card">
+                            <p>discover</p>
+                            <input type="radio" class="donate-radio" name="card-type">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="card-info">
+                    <input type="text" class="user-info info-other" id="credit-or-debit" placeholder="CREDIT/DEBIT CARD">
+                    <input type="text" class="user-info info-other" id="card-number" placeholder="CARD NUMBER">
+                    <input type="text" class="user-info info-other" id="name-on-card" placeholder="NAME ON CARD">
+                    <input type="text" class="user-info info-other" id="expiration" placeholder="MM/YY">
+                    <input type="text" class="user-info info-other" id="cvv" placeholder="CVV">
+                </div>
+
+                <div class="save-card-button"> Save Card Info </div>
+            </div>
+
+
+            <div id="donations" class="submenu">
+                    <p id="title">I would like to Donate</p> <br />
+                <div id="donations-amount">
+                    <div class="donate-amount">
+                        <button type="button" class="amount-button">$5</button>
+                        <input type="radio" class="amount-radio" name="donate-amount">
+                    </div>
+                    <div class="donate-amount">
+                        <button type="button" class="amount-button">$10</button>
+                        <input type="radio" class="amount-radio" name="donate-amount">
+                    </div>
+                    <div class="donate-amount">
+                        <button type="button" class="amount-button">$25</button>
+                        <input type="radio" class="amount-radio" name="donate-amount">
+                    </div>
+                    <div class="donate-amount">
+                        <button type="button" class="amount-button">$50</button>
+                        <input type="radio" class="amount-radio" name="donate-amount">
+                    </div>
+
+                    <div class="donate-amount">
+                        <button type="button" class="amount-button">$100</button>
+                        <input type="radio" class="amount-radio" name="donate-amount">
+                    </div>
+                    <div class="donate-amount">
+                        <button type="button" class="amount-button">OTHER</button>
+                        <input id="radio-other" type="radio" class="amount-radio" name="donate-amount">
+                    </div>
+                </div>
+
+                <div id="payment-type">
+                    <div id="one-time" class="donate-payment">
+                        <button type="button" class="amount-button">ONE TIME</button>
+                        <input type="radio" class="donate-radio" name="donate-type">
+                    </div>
+                    <div id="monthly" class="donate-payment">
+                        <button type="button" class="amount-button">MONTHLY</button>
+                        <input type="radio" class="donate-radio" name="donate-type">
+                    </div>
+                </div>
+
+                <div id="donate-info">
+                    <input type="text" class="user-info info-name" id="first-name" placeholder="FIRST NAME">
+                    <input type="text" class="user-info info-name" id="last-name" placeholder="LAST NAME">
+                    <input type="text" class="user-info info-other" id="user-email" placeholder="EMAIL">
+                    <input type="text" class="user-info info-other" id="donation-reason" placeholder="REASON FOR DONATION (OPTIONAL)">
+                </div>
+
+                <div id="payment-options">
+                    <h1>Payment Options</h1>
+                    <div id="card-wrapper">
+                        <div id="visa" class="card">
+                            <p>visa</p>
+                            <input type="radio" class="donate-radio" name="card-type">
+                        </div>
+                        <div id="mastercard" class="card">
+                            <p>mastercard</p>
+                            <input type="radio" class="donate-radio" name="card-type">
+                        </div>
+                        <div id="american-express" class="card">
+                            <p>america express</p>
+                            <input type="radio" class="donate-radio" name="card-type">
+                        </div>
+                        <div id="discover" class="card">
+                            <p>discover</p>
+                            <input type="radio" class="donate-radio" name="card-type">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="card-info">
+                    <input type="text" class="user-info info-other" id="credit-or-debit" placeholder="CREDIT/DEBIT CARD">
+                    <input type="text" class="user-info info-other" id="card-number" placeholder="CARD NUMBER">
+                    <input type="text" class="user-info info-other" id="name-on-card" placeholder="NAME ON CARD">
+                    <input type="text" class="user-info info-other" id="expiration" placeholder="MM/YY">
+                    <input type="text" class="user-info info-other" id="cvv" placeholder="CVV">
+                </div>
+
+                <h1 id="thanks">Thank You for Your Contributions!</h1>
+            </div>
+
+            <div id="edit-settings" class="submenu">
+                <div id="image-button-wrapper">
+                    <button id="upload-image" type="button" class="image-button">Upload Image</button>
+                    <button id="no-image" type="button" class="image-button">No Image</button>
+                </div>
+
+                <div id="user-info-wrapper">
+                    <input type="text" class="user-info info-name" id="first-name" placeholder="FIRST NAME">
+                    <input type="text" class="user-info info-name" id="last-name" placeholder="LAST NAME">
+                    <input type="text" class="user-info info-other" id="user-email" placeholder="EMAIL">
+                    <input type="text" class="user-info info-other" id="location" placeholder="LOCATION">
+                </div>
+            </div>
+        </div>
+</body>

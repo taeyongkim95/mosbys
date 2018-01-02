@@ -1,0 +1,941 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+@font-face {
+	font-family: 'Gloria';
+	src: url('fonts/gloria.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/********** Main Page Configuration **********/
+* {
+	font-family: 'Nunito';
+}
+
+html,body
+{
+	overflow-x: hidden;
+}
+
+a:link {
+	text-decoration: none;
+	color:white;
+}
+
+a:visited {
+	text-decoration: none;
+	color:white;
+}
+
+.first_letter {
+	font-family: 'Gloria';
+}
+
+/********** Header ***********/
+#header {
+	height: 100px;
+	top: 5px;
+	background-color: #F47D1F;
+	display: flex;
+	flex-direction: row;
+	min-width: 800px;
+}
+
+#tabs {
+	display: flex;
+	width: 50%;
+}
+
+.tab {
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+	border-style: none;
+	height: 100px;
+	width:180px;
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 200px;
+	background-color: #F47D1F;
+	position: relative;
+	left:15%;
+}
+
+.tab_logo {
+	color: white;
+	border-style: none;
+	height: 58px;
+	position: relative;
+	top: 5px;
+	left:2px;
+}
+
+#logo_circle {
+	height:70px;
+	width:70px;
+	border-radius: 50%;
+	background-color: white;
+	z-index:2;
+	margin-top: 15px;
+	left:25px;
+	position:absolute;
+}
+
+#search {
+	display: flex;
+	position: relative;
+	width: 250px;
+	height: 30px;
+	top: 34px;
+	left: 230px;
+	margin-right:150px;
+}
+
+.searchbox {
+	width:200px;
+	font-weight: 500;
+	color:#1E4389;
+	font-size: 22px;
+}
+
+#account {
+	position: relative;
+	display: flex;
+	width: 200px;
+	height: 60px;
+	padding-top:18px;
+	left:100px;
+}
+
+#notification {
+	position: relative;
+	left:70px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+
+#sign-up p {
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.underline {
+	background-color: white;
+	width: 70%;
+	margin:auto;
+	height:3px;
+}
+
+#bag {
+	position:relative;
+	display:flex;
+	width:100px;
+	left:470px;
+	top:18px;
+	margin-right: 90px;
+}
+
+#bag_icon {
+	width:70px;
+	height:55px;
+	margin-left: 30px;
+}
+
+.header_popcorn {
+	height:90px;
+	width:90px;
+	display:flex;
+	margin-left: 450px;
+}
+
+/********** Icons **********/
+.icon {
+	position: relative;
+	width: 60px;
+}
+
+.search_icon {
+	position:relative;
+	width: 35px;
+	padding-right: 15px;
+}
+
+/********** Splash **********/
+#splash {
+	height:720px;
+	margin-top: 2px;
+	text-align: center;
+	border-bottom: solid 2px #1E4389;
+}
+
+#video {
+  min-width: 100%;
+  min-height: 100%;
+  height:720px;
+	width:100%;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	z-index: -5;
+	object-fit: fill;
+}
+
+#circle {
+ background-color: white;
+ width: 370px;
+ height: 370px;
+ border-radius: 50%;
+ z-index: 2;
+ margin-left: 39%;
+ top:35%;
+ position:absolute;
+ opacity:0.9;
+}
+
+#splash_img {
+	z-index: -3;
+	height:300px;
+	padding-top: 33px;
+}
+
+/********** Popcorn Goals **********/
+#popcorn {
+	margin-top: 5px;
+	width: 100%;
+	height: 500px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 150px;
+}
+
+#popcorn-title {
+	color: #1E4389;
+	width: 700px;
+	margin: 0 auto;
+	font-size: 75px;
+	position: relative;
+	bottom: 150px;
+}
+
+#motto {
+	width: 550px;
+	text-align: center;
+	margin: 0 auto;
+	font-family: 'Nunito';
+	font-size: 22px;
+	color: #F17D26;
+	position: relative;
+	bottom: 200px;
+}
+
+#motto p {
+	line-height:36px;
+}
+
+.sign {
+	margin:10px;
+}
+
+#sign {
+	height:100px;
+	position: relative;
+	bottom: 200px;
+}
+
+/********* What's Hot *********/
+#whats-hot {
+	padding-top:450px;
+	height:180px;
+	text-align: center;
+}
+
+#whats-hot p {
+	font-size: 80px;
+	color: #3C9BD5;
+	display: inline;
+}
+
+#flame {
+	top: 5px;
+	height:45%;
+	display:inline;
+	margin-top:90px;
+}
+
+/********* Flavors ********/
+#flavors {
+	bottom: 100px;
+	text-align: center;
+}
+
+.flavor {
+	height: 500px;
+	text-align: center;
+	color: white;
+	margin-bottom: 5px;
+	position: relative;
+}
+
+.name {
+	font-size: 80px;
+	margin: 0px;
+	width: 900px;
+}
+
+/* Background Color */
+#caramel, #gr-beer-cheese {
+	background-color: #F47D1F;
+}
+
+#cheesecake {
+	background-color: #3C9BD5;
+}
+
+#pineapple {
+	background-color: #1E4389;
+}
+
+/* Position for Flavor Icons */
+.img-flavor {
+	width: 200px;
+	display: flex;
+	position: absolute;
+}
+
+.img-flavor-double {
+	width: 450px;
+	display: flex;
+	position: absolute;
+}
+
+#img-caramel {
+	width:250px;
+	right: 450px;
+	bottom: 220px;
+}
+
+#img-cheesecake {
+	bottom:-50px;
+	left: 430px;
+	width:500px;
+}
+
+#img-pineapple {
+	width:350px;
+	right: 350px;
+	bottom: -20px;
+}
+
+#img-gr-beer-cheese {
+	left: 440px;
+	bottom:-70px;
+	width:500px;
+}
+
+/* Placement for Flavors */
+#caramel {
+	display: flex;
+	position: relative;
+}
+
+#caramel .description,
+#pineapple .description {
+	width: 300px;
+	text-align: left;
+	position: relative;
+	float: left;
+	top: 15%;
+	left: 50%;
+}
+
+#cheesecake .description,
+#gr-beer-cheese .description {
+	width: 300px;
+	text-align: right;
+	position: relative;
+	float: right;
+	top: 15%;
+	right: 50%;
+}
+
+#cheesecake .name,
+#gr-beer-cheese .name {
+	text-align: right;
+	position: relative;
+	margin-bottom:20px;
+	float: right;
+}
+
+.description-text {
+	font-size: 26px;
+	margin-top: 20px;
+}
+
+#btn-shop {
+	width: 120px;
+	height: 50px;
+	cursor:pointer;
+	border-radius:5px;
+	border-color: white;
+	background-color: white;
+	font-family: 'Nunito';
+	font-weight: bold;
+	margin-top: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#btn-shop p {
+	padding-top:10px;
+	font-size: 20px;
+}
+
+#cheesecake #btn-shop, #gr-beer-cheese #btn-shop {
+	margin-left:180px;
+}
+
+/* Color for Flavor Background */
+#caramel #btn-shop,
+#gr-beer-cheese #btn-shop {
+	color: #F47D1F;
+}
+
+#cheesecake #btn-shop {
+	color: #3C9BD5;
+}
+
+#pineapple #btn-shop {
+	color: #1E4389;
+}
+
+/******** Contact *********/
+#contact {
+	height: 500px;
+	background-color: #3C9BD5;
+	position: relative;
+	padding-bottom: 40px;
+}
+
+#email {
+	padding-left: 20px;
+	width: 380px;
+	height: 30px;
+	border-style: none;
+	border-radius: 2px;
+	margin-top: 40px;
+}
+
+#subscribe {
+	position: relative;
+	bottom: -200px;
+	margin: 0 auto;
+	width:520px;
+	display: flex;
+}
+
+input[type=submit] {
+	background-color: #3C9BD5;
+	color: white;
+	border:none;
+	cursor: pointer;
+	font-size:18px;
+	font-weight: bold;
+}
+
+#lbl-email {
+	position: relative;
+	width: 50px;
+	height: 20px;
+	right: 60px;
+	top:4px;
+	background-color: white;
+}
+
+#lbl-email h3 {
+	color: #F47D1F;
+	font-style: italic;
+	position: relative;
+	bottom: 18px;
+}
+
+#footer {
+	position: relative;
+	top: 250px;
+	display: flex;
+	width: 475px;
+	height: 100px;
+	margin: auto;
+	justify-content: space-between;
+}
+
+#footer p {
+	margin-top: 0px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+
+.footer-tab {
+	text-align: center;
+}
+
+#terms {
+	position: relative;
+	top:300px;
+	margin: auto;
+	display: flex;
+	text-align: center;
+	left:48%;
+	font-size:20px;
+	font-weight: bold;
+}
+
+/******** Sign-up popup **********/
+#sign-up {
+	cursor:pointer;
+}
+
+#sign-up-popup {
+	width:400px;
+	height: 500px;
+	background-color: white;
+	transform: scale(0.8);
+}
+
+#sign-up-popup p{
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
+	color: #F47D1F;
+	margin-top: 1%;
+	margin-bottom:15%;
+}
+
+.sign-up-pop1 {
+	height:130px;
+	width:130px;
+	position:absolute;
+	left:3%;
+}
+
+.sign-up-pop2 {
+	height:150px;
+	width:150px;
+	position:absolute;
+	right:-3%;
+}
+
+.sign-up-pop3 {
+	height:140px;
+	width:140px;
+	position: absolute;
+	left:2%;
+	bottom:20%;
+}
+
+.sign-up-pop4 {
+	height:130px;
+	width:130px;
+	position:absolute;
+	right:3%;
+	bottom:23%;
+}
+
+.sign-up-icon {
+	height:100px;
+	position: relative;
+	left:40%;
+	margin-top:4%;
+}
+
+.sign-up-lines {
+	width:100%;
+	height:20px;
+}
+
+.sign-up-circle {
+	height:150px;
+	width:150px;
+	border-radius: 50%;
+	background-color: white;
+	position:absolute;
+	bottom:4%;
+	left:32%;
+}
+
+.sign-up-logo {
+	height:120px;
+	left:7px;
+	top:20px;
+	position: relative;
+}
+
+/******** Feedback popup ********/
+
+#feedback {
+	cursor:pointer;
+}
+
+#feedback-popup {
+	width: 700px;
+	height: 950px;
+	background-color: white;
+	transform: scale(0.8);
+}
+
+#feedback-tag {
+	height:30px;
+	background-color: #F47D1F;
+}
+
+#feedback-content {
+	height:890px;
+}
+
+#feedback-logo {
+	height:150px;
+	bottom:400px;
+	position:absolute;
+	margin-left:470px;
+}
+
+.feedback-header {
+	color: #F47D1F;
+	margin-left: 50px;
+	font-size: 44px;
+
+}
+
+.feedback-question {
+	margin-left: 50px;
+	color: #1E4389;
+	font-size: 26px;
+	font-weight: bold;
+	width:600px;
+}
+
+#feedback-form {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.feedback-message {
+	width: 600px;
+	height:150px;
+	margin-left: 50px;
+	border: 1px black solid;
+}
+
+.feedback-submit {
+	background-color:#1E4389;
+	border:none;
+	color: white;
+	font-weight: bold;
+	width:100px;
+	font-size:20px;
+	padding: 5px 8px;
+	text-align: center;
+	cursor:pointer;
+	position: relative;
+	margin-left: 50px;
+	margin-top: 40px;
+}
+
+.button_container {
+		display: block;
+		position:relative;
+		padding-top:12px;
+		cursor: pointer;
+		padding-left: 32px;
+		margin-left: 50px;
+		-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+		user-select: none;
+}
+
+.button_container input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 10px;
+		left:0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+		border: 1px black solid;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.button_container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.button_container .checkmark:after {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #1E4389;
+}
+
+.popup_visible #fadeandscale {
+	transform: scale(1);
+}
+
+
+/********** Social Media **********/
+#social-media {
+	width: 100%;
+	height:80px;
+	bottom: 0px;
+	padding-top: 30px;
+}
+
+#social-media-prompt {
+	text-align: center;
+	color: white;
+	font-size:44px;
+}
+
+#social-container {
+	position: absolute;
+	right: 40%;
+	margin-bottom:150px;
+}
+
+.social {
+	width: 40px;
+	height: 40px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top: 25px;
+	padding-bottom: 50px;
+	justify-content: space-between;
+}
+
+/********* Popcorn *********/
+#onepop1 {
+	top: 300px;
+	right: 700px
+}
+
+#onepop2 {
+	bottom: 300px;
+	left: 670px;
+}
+
+#onepop3 {
+	bottom: 650px;
+	left: 570px;
+}
+
+#twopop1 {
+	left: 740px;
+	bottom: 280px;
+
+}
+
+#twopop2 {
+	left: 200px;
+	top: 300px;
+}
+
+#twopop3 {
+	right: 350px;
+	top: 30px;
+	transform: rotate(70deg);
+	margin:10px 0px;
+}
+
+#threepop1 {
+	right: 20px;
+	bottom: 310px;
+}
+
+#threepop2 {
+	right: 1100px;
+	bottom:400px;
+}
+
+#threepop3 {
+	right: 275px;
+	bottom: 80px;
+}
+
+#threepop4 {
+	left: 550px;
+	top: 30px;
+}
+
+.pop1 {
+	width: 150px;
+	height: 150px;
+	position: relative;
+}
+
+.pop2 {
+	width: 170px;
+	height: 200px;
+	position: relative;
+}
+
+.pop3 {
+	height: 230px;
+	width: 230px;
+	position: relative;
+}
+
+/************* white popcorn *********/
+
+#white_pop {
+	width:200px;
+	height:200px;
+	position:absolute;
+}
+
+.whitepop1 {
+	top:50%;
+	left:5%;
+}
+
+.whitepop2 {
+	left:80%;
+}
+
+.whitepop3 {
+	right:80%;
+	top:50%;
+}
+
+.whitepop4 {
+	right:5%;
+}
+
+/********** divide line *************/
+
+#divide-line {
+	width:100%;
+	height:2px;
+	margin-bottom: 5px;
+}
+
+.darkblue {
+	background-color: #1E4389;
+}
+
+.orange {
+	background-color: #F47D1F;
+}
+
+.lightblue {
+	background-color:#3C9BD5;
+}
+/********* Webkit Animation *********/
+
+.tab {
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Daniel Eden
+ */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+	@-webkit-keyframes bounce {
+	  from, 20%, 53%, 80%, to {
+	    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	    -webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0); }
+	  40%, 43% {
+	    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    -webkit-transform: translate3d(0, -30px, 0);
+	    transform: translate3d(0, -30px, 0); }
+	  70% {
+	    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    -webkit-transform: translate3d(0, -15px, 0);
+	    transform: translate3d(0, -15px, 0); }
+	  90% {
+	    -webkit-transform: translate3d(0, -4px, 0);
+	    transform: translate3d(0, -4px, 0); } }
+
+	@keyframes bounce {
+	  from, 20%, 53%, 80%, to {
+	    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	    -webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0); }
+	  40%, 43% {
+	    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    -webkit-transform: translate3d(0, -30px, 0);
+	    transform: translate3d(0, -30px, 0); }
+	  70% {
+	    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    -webkit-transform: translate3d(0, -15px, 0);
+	    transform: translate3d(0, -15px, 0); }
+	  90% {
+	    -webkit-transform: translate3d(0, -4px, 0);
+	    transform: translate3d(0, -4px, 0); } }
+
+	.bounce {
+	  -webkit-animation-name: bounce;
+	  animation-name: bounce;
+	  -webkit-transform-origin: center bottom;
+	  -ms-transform-origin: center bottom;
+	  transform-origin: center bottom; }
+
+		/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+		@-webkit-keyframes pulse {
+		  from {
+		    -webkit-transform: scale3d(1, 1, 1);
+		    transform: scale3d(1, 1, 1); }
+		  50% {
+		    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+		    transform: scale3d(1.05, 1.05, 1.05); }
+		  to {
+		    -webkit-transform: scale3d(1, 1, 1);
+		    transform: scale3d(1, 1, 1); } }
+
+		@keyframes pulse {
+		  from {
+		    -webkit-transform: scale3d(1, 1, 1);
+		    transform: scale3d(1, 1, 1); }
+		  50% {
+		    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+		    transform: scale3d(1.05, 1.05, 1.05); }
+		  to {
+		    -webkit-transform: scale3d(1, 1, 1);
+		    transform: scale3d(1, 1, 1); } }
+
+		.pulse {
+		  -webkit-animation-name: pulse;
+		  animation-name: pulse; }

@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+@font-face {
+	font-family: 'Gloria';
+	src: url('../fonts/gloria.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/********** Main Page Configuration **********/
+* {
+	font-family: 'Nunito';
+}
+
+html,body
+{
+	overflow-x: hidden;
+}
+
+a:link {
+	text-decoration: none;
+	color:white;
+}
+
+a:visited {
+	text-decoration: none;
+	color:white;
+}
+
+.first_letter {
+	font-family: 'Gloria';
+}
+
+/********** Header ***********/
+#header {
+	height: 100px;
+	top: 5px;
+	background-color: #F47D1F;
+	display: flex;
+	flex-direction: row;
+	min-width: 800px;
+}
+
+#tabs {
+	display: flex;
+	width: 50%;
+}
+
+.tab {
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+	border-style: none;
+	height: 100px;
+	width:180px;
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 200px;
+	background-color: #F47D1F;
+	position: relative;
+	left:15%;
+}
+
+.tab_logo {
+	color: white;
+	border-style: none;
+	height: 58px;
+	position: relative;
+	top: 5px;
+	left:2px;
+}
+
+#logo_circle {
+	height:70px;
+	width:70px;
+	border-radius: 50%;
+	background-color: white;
+	z-index:2;
+	margin-top: 15px;
+	left:25px;
+	position:absolute;
+}
+
+.tab:hover {
+	background-color: rgb(202, 91, 5);
+}
+
+#search {
+	display: flex;
+	position: relative;
+	width: 200px;
+	height: 30px;
+	top: 34px;
+	left: 230px;
+	margin-right:100px;
+}
+
+#account {
+	position: relative;
+	display: flex;
+	width: 200px;
+	height: 60px;
+	padding-top:18px;
+	left:100px;
+}
+
+#notification {
+	position: relative;
+	left:70px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+
+#sign-up p {
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.underline {
+	background-color: white;
+	width: 70%;
+	margin:auto;
+	height:3px;
+}
+
+#bag {
+	position:relative;
+	display:flex;
+	width:100px;
+	left:130px;
+	top:18px;
+	margin-right: 90px;
+}
+
+#bag_icon {
+	width:70px;
+	height:55px;
+	margin-left: 30px;
+}
+
+
+/******** Contact *********/
+#contact {
+	height: 500px;
+	background-color: #3C9BD5;
+	position: relative;
+	padding-bottom: 50px;
+}
+
+#email {
+	width: 400px;
+	height: 30px;
+	border-style: none;
+	border-radius: 2px;
+}
+
+#subscribe {
+	position: relative;
+	bottom: -200px;
+	margin: 0 auto;
+	width: 500px;
+	display: flex;
+}
+
+#subscribe h2 {
+	position: relative;
+	bottom: 20px;
+	right: 25px;
+	color: white;
+}
+
+#lbl-email {
+	position: relative;
+	width: 50px;
+	height: 20px;
+	right: 60px;
+	top:4px;
+	background-color: white;
+}
+
+#lbl-email h3 {
+	color: #F47D1F;
+	font-style: italic;
+	position: relative;
+	bottom: 18px;
+}
+
+#footer {
+	position: relative;
+	top: 200px;
+	display: flex;
+	width: 475px;
+	height: 100px;
+	margin: auto;
+	justify-content: space-between;
+}
+
+#footer p {
+	margin-top: 0px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+
+.footer-tab {
+	text-align: center;
+}
+
+
+
+/********** Social Media **********/
+#social-media {
+	width: 100%;
+	height:80px;
+	bottom: 0px;
+	padding-top: 25px;
+}
+
+#social-media-prompt {
+	text-align: center;
+	color: white;
+}
+
+#social-container {
+	position: absolute;
+	right: 43%;
+
+}
+
+.social {
+	width: 40px;
+	height: 40px;
+	padding-right: 5px;
+	padding-top: 25px;
+	padding-bottom: 45px;
+	justify-content: space-between;
+}
+
+/********** Icons **********/
+.icon {
+	position: relative;
+	width: 60px;
+}
+
+.search_icon {
+	position:relative;
+	width: 30px;
+}
+
+/**********************************/
+/********** Account Page **********/
+
+.submenu {
+	display: none;
+}
+
+/********** Profile **********/
+#profile {
+	text-align: center;
+}
+
+#profile p {
+	color: #1E4389;
+}
+
+#profile #title {
+	font-size: 60px;
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+
+#profile #picture {
+	position: relative;
+	bottom: 40px;
+	left: 5px;
+	width: 300px;
+}
+
+#user-description {
+	position: relative;
+	bottom: 100px;
+	font-size: 30px;
+	margin-top: 0px;
+}
+
+#name {
+	font-weight: bold;
+}
+
+.description {
+	margin: 0px;
+}
+
+/********* Account Menu *********/
+#account-menu {
+	position: relative;
+	margin: auto;
+	bottom: 50px;
+	height: 600px;
+	width: 1000px;
+}
+
+#options {
+	width: 1000px;
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	border-bottom: 5px solid #3C9BD5;
+}
+
+.options-tab {
+	background-color: white;
+	color: #F47D1F;
+	border-style: none;
+	font-size: 20px;
+	height: 50px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.options-tab:focus {
+	outline: 0;
+}
+
+/********* Wish list ************/
+#list-wrapper {
+	text-align: center;
+	position:relative;
+	left:50%;
+}
+
+/********** Donate ********/
+#donations {
+	display: block;
+}
+
+#donations-amount {
+	display: flex;
+	justify-content: center;
+}
+
+.donate-amount {
+	display: block;
+	position: relative;
+	text-align: center;
+	height: 100px;
+	width: 80px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#payment-type {
+	position: relative;
+	width: 400px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+#radio-other {
+	position: relative;
+	left: 15px;
+}
+
+.amount-radio {
+	justify-content: center;
+	position: relative;
+	top: 10px;
+}
+
+#donations #title {
+	font-size: 36px;
+	font-weight: bold;
+	color: #3C9BD5;
+	text-align: center;
+	margin: 10px 0 0 0;
+}
+
+.amount-button{
+	background-color: #3C9BD5;
+	border-style: none;
+	border-radius: 5px;
+	color: white;
+	padding: 14px;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.donate-payment {
+	width: 150px;
+}
+
+.donate-radio {
+	position: relative;
+	top: 15px;
+	left: 55px;
+	margin-bottom: 50px;
+}
+
+#donate-info, #card-info{
+	position: flex;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.save-card-button {
+	background-color: #F47D1F;
+	border:none;
+	color:white;
+	font-weight: bold;
+	font-size:20px;
+	padding: 15px 32px;
+	text-align: center;
+	display:inline-block;
+	margin:4px 2px;
+	cursor:pointer;
+	position:relative;
+	left:40%;
+	margin-top:50px;
+}
+
+#donation-reason {
+	height: 150px;
+}
+
+#card-wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 500px;
+	margin: auto;
+}
+
+#expiration, #cvv {
+	width: 300px;
+}
+
+#thanks {
+	position: relative;
+	top: 50px;
+	text-align: center;
+	color: #3C9BD5;
+}
+
+/********** Edit Settings **********/
+#edit-settings {
+	display: none;
+}
+
+#payment-options {
+	text-align: center;
+}
+
+#image-button-wrapper{
+	display: flex;
+	width: 500px;
+	margin: auto;
+	justify-content: center;
+	padding-top: 30px;
+}
+
+.image-button {
+	background-color:#3C9BD5;
+	width: 120px;
+	height: 50px;
+	border-style: none;
+	color: white;
+	font-size: 16px;
+	border-radius: 5px;
+	font-weight: bold;
+	margin: 10px;
+}
+
+#user-info-wrapper {
+	position: flex;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.user-info {
+	margin: 5px;
+	font-size: 20px;
+	color: black;
+	font-weight: bold;
+	border: 1px solid black;
+}
+
+.user-info::placeholder {
+	color: black;
+	font-weight: bold;
+}
+
+.info-name {
+	width: 380px;
+	height: 50px;
+	text-align: center;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+.info-other {
+	width: 800px;
+	height: 50px;
+	text-align: center;
+}
+
+/********* Webkit Animation *********/
+
+.tab {
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Daniel Eden
+ */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+	@-webkit-keyframes bounce {
+	  from, 20%, 53%, 80%, to {
+	    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	    -webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0); }
+	  40%, 43% {
+	    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    -webkit-transform: translate3d(0, -30px, 0);
+	    transform: translate3d(0, -30px, 0); }
+	  70% {
+	    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    -webkit-transform: translate3d(0, -15px, 0);
+	    transform: translate3d(0, -15px, 0); }
+	  90% {
+	    -webkit-transform: translate3d(0, -4px, 0);
+	    transform: translate3d(0, -4px, 0); } }
+
+	@keyframes bounce {
+	  from, 20%, 53%, 80%, to {
+	    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	    -webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0); }
+	  40%, 43% {
+	    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    -webkit-transform: translate3d(0, -30px, 0);
+	    transform: translate3d(0, -30px, 0); }
+	  70% {
+	    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    -webkit-transform: translate3d(0, -15px, 0);
+	    transform: translate3d(0, -15px, 0); }
+	  90% {
+	    -webkit-transform: translate3d(0, -4px, 0);
+	    transform: translate3d(0, -4px, 0); } }
+
+	.bounce {
+	  -webkit-animation-name: bounce;
+	  animation-name: bounce;
+	  -webkit-transform-origin: center bottom;
+	  -ms-transform-origin: center bottom;
+	  transform-origin: center bottom; }
+
+		/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+		@-webkit-keyframes pulse {
+		  from {
+		    -webkit-transform: scale3d(1, 1, 1);
+		    transform: scale3d(1, 1, 1); }
+		  50% {
+		    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+		    transform: scale3d(1.05, 1.05, 1.05); }
+		  to {
+		    -webkit-transform: scale3d(1, 1, 1);
+		    transform: scale3d(1, 1, 1); } }
+
+		@keyframes pulse {
+		  from {
+		    -webkit-transform: scale3d(1, 1, 1);
+		    transform: scale3d(1, 1, 1); }
+		  50% {
+		    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+		    transform: scale3d(1.05, 1.05, 1.05); }
+		  to {
+		    -webkit-transform: scale3d(1, 1, 1);
+		    transform: scale3d(1, 1, 1); } }
+
+		.pulse {
+		  -webkit-animation-name: pulse;
+		  animation-name: pulse; }

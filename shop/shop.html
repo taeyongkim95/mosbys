@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Mosbys Popcorn</title>
+    <link rel="stylesheet" href="shop-styles.css">
+		<link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+		<link rel="stylesheet" href="../lightbox.css">
+		<script src="../jquery-3.2.1.js"></script>
+		<script src="../jquery-popup-overlay/jquery.popupoverlay.js"></script>
+		<script src="../lightbox.js"></script>
+		<script src="shop.js"></script>
+
+	</head>
+	<body>
+
+		<div id="header">
+			<div id="tabs">
+				<div id="logo_circle">
+					<a href="../index.html"><img class="tab_logo" src="../images/logo.png" /></a>
+				</div>
+        <button type="button" class="tab"> <a href="../index.html">Home</a></button>
+				<button type="button" class="tab"> <a href="shop.html">Shop</a> <div class="underline"> </div></button>
+				<button type="button" class="tab"> <a href="../social/social.html">Social Pop</a></button>
+				<button type="button" class="tab"> <a href="../contact/contact.html">Contact</a></button>
+			</div>
+			<div id="bag">
+				<p id="notification">0</p>
+				<img id="bag_icon" src="../images/icons/tools/bag.png">
+			</div>
+
+			<img class="header_popcorn" src="../images/white_pop1.png">
+
+    </div>
+
+		<div id="teaser">
+			<p id="teaser-text"> <span class="first_letter">N</span>ew <span class="first_letter">S</span>hipping <br /> & <span class="first_letter">P</span>ackaging <br />
+				<span class="teaser-orange"><span class="first_letter">E</span>xperience </span>
+				<br /> <span class="first_letter">G</span>oing <span class="first_letter">L</span>ive <br />
+				<span class="teaser-orange"><span class="first_letter">J</span>anuary 2018!</span>
+			<img class="teaser-pop1" src="../images/pop3.png">
+			<img class="teaser-pop2" src="../images/pop2.png">
+			<img class="teaser-bag" src="../images/shots/popcorn_bag.png">
+			<img class="teaser-box" src="../images/shots/popcorn_box2.png">
+			<img class="teaser-pail" src="../images/shots/popcorn_pail.png">
+		</div>
+
+    <div id="choose">
+      <div id="flavor-options">
+        <h1 id="choose-txt">1.<br/> PICK YOUR <br /> FAVORITE <br /> FLAVOR <br /> OR <br /> M<span style="color:#F47D1F">I</span><span style="color:#1E4389;">X</span> & MATCH . </h1>
+				<h1 id="flavor-header"><span class="first_letter">C</span>hoose a <span class="first_letter">C</span>ategory!</h1>
+        <div id="choose-flavor-wrapper">
+          <div class="choose-flavor" id="choose-butter">
+            <img class="flavor-icon" id="butter" src="../images/icons/category/orange/orange_butter.png">
+            <p>Butter</p>
+          </div>
+          <div class="choose-flavor" id="choose-kettle">
+            <img class="flavor-icon" id="kettle" src="../images/icons/category/orange/orange_kettle.png">
+            <p>Kettle</p>
+          </div>
+          <div class="choose-flavor" id="choose-cheese">
+            <img class="flavor-icon" id="cheese" src="../images/icons/category/orange/orange_cheese.png">
+            <p>Cheese</p>
+          </div>
+          <div class="choose-flavor" id="choose-caramel">
+            <img class="flavor-icon" id="caramel" src="../images/icons/category/orange/orange_caramel.png">
+            <p>Caramel</p>
+          </div>
+          <div class="choose-flavor" id="choose-candy">
+            <img class="flavor-icon" id="candy" src="../images/icons/category/orange/orange_candy.png">
+            <p>Candy</p>
+          </div>
+          <div class="choose-flavor" id="choose-premium">
+            <img class="flavor-icon" id="premium" src="../images/icons/category/orange/orange_premium.png">
+            <p>Premium</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="flavor-display">
+        <div id="flavor-display-name">
+          <h1 id="display-click"></h1>
+				</div>
+
+        <div id="flavor-product-wrapper">
+					<div class="flavor-popup">
+						<div id="popup-image-display"></div>
+						<div class="popup-content">
+							<h1 id="popup-flavor"></h1>
+							<p id="flavor-description"></p>
+							<div id="options-wrapper">
+								<h2 id="options-title">Size Options</h2>
+								<div id="size-options-wrapper">
+									<input type="radio" name="size" class="size" id="junior">
+									<label for="junior">Junior</label>
+									<input type="radio" name="size" class="size" id="small">
+									<label for="small">Small</label>
+									<input type="radio" name="size" class="size" id="medium">
+									<label for="medium">Medium</label>
+									<input type="radio" name="size" class="size" id="large">
+									<label for="large">Large</label>
+									<input type="radio" name="size" class="size" id="family">
+									<label for="family">Family</label>
+									<input type="radio" name="size" class="size" id="tin">
+									<label for="tin">Tin</label>
+								</div>
+								<button id="add-flavor">Add Flavor</button>
+							</div>
+							<div id="bag-wrapper">
+								<div id="qty-wrapper">
+									<h2>QTY:</h2>
+									<input type="number"> </br>
+								</div>
+								<div id="price-wrapper">
+									<h2>Price:</h2>
+									<input id="price" readonly>
+
+								</div>
+								<button id="shop-more" type="button">Shop More</button>
+								<button id="proceed" type="button">Proceed to Checkout</button>
+							</div>
+
+						</div>
+				</div>
+      </div>
+    </div>
+
+		<div id="old_packaging">
+			<h1 id="packaging-header"><span class="first_letter">S</span>ize <span class="first_letter">O</span>ptions</h1>
+			<div class="darkblue_square">
+				<a href="../images/old-packaging/mosbys_jr_bag.png" data-lightbox="jr_bag" data-title="Junior bag"><img class="packaging" src="../images/old-packaging/mosbys_jr_bag.png"></a>
+				<p> Junior
+			</div>
+			<div class="orange_square">
+				<a href="../images/old-packaging/mosbys_small_bag.png" data-lightbox="small_bag" data-title="Small bag"><img class="packaging" src="../images/old-packaging/mosbys_small_bag.png"></a>
+				<p> Small
+			</div>
+			<div class="lightblue_square">
+				<a href="../images/old-packaging/mosbys_med_bag.png" data-lightbox="med_bag" data-title="Medium bag"><img class="packaging" src="../images/old-packaging/mosbys_med_bag.png"></a>
+				<p> Medium
+			</div>
+
+			<div class="lightblue_square">
+				<a href="../images/old-packaging/mosbys_large_bag.png" data-lightbox="large_bag" data-title="Large bag"><img class="packaging" src="../images/old-packaging/mosbys_large_bag.png"></a>
+				<p> Large
+			</div>
+			<div class="darkblue_square">
+				<a href="../images/old-packaging/mosbys_family_bag.png" data-lightbox="family_bag" data-title="Family bag"><img class="packaging familybag" src="../images/old-packaging/mosbys_family_bag.png"></a>
+				<p> Family
+			</div>
+			<div class="orange_square">
+				<a href="../images/old-packaging/blue_tin.png" data-lightbox="tin" data-title="Tin"><img class="packaging bluetin" src="../images/old-packaging/blue_tin.png"></a>
+				<p> Tin
+			</div>
+		</div>
+
+		<img class="popcorn-load" src="../images/popcorn-load.png">
+
+    <div id="contact">
+			<div id="social-media">
+				<div id="social-container">
+					<h2 id="social-media-prompt"> <span class="first_letter">F</span>ollow <span class="first_letter">U</span>s <span class="first_letter">O</span>n... </h2>
+					<a href="https://www.facebook.com/Mosbyspopcorn/" target="_blank">
+						<img class="social" src="../images/icons/social/fb_shop.png">
+					</a>
+					<a href="https://www.instagram.com/mosbyspopcorn/" target="_blank">
+						<img class="social" src="../images/icons/social/insta_shop.png">
+					</a>
+					<a href="https://www.pinterest.com/mpopcornpalace/" target="_blank">
+						<img class="social" src="../images/icons/social/pinterest_shop.png">
+					</a>
+					<a href="https://twitter.com/mosbyspopcorn" target="_blank">
+						<img class="social" src="../images/icons/social/twitter_shop.png">
+					</a>
+				</div>
+
+				<div id="subscribe">
+					<form method="POST" action="../subscribe.php">
+						<input id="email" name="email" type="email" placeholder="enter email">
+						<input class="subscribe_button" type="submit" value="SUBSCRIBE" name="submit">
+					</form>
+				</div>
+
+			<div id="footer">
+				<div id="sign-up" class="footer-tab">
+					<img class="icon" src="../images/icons/tools/account-new.png">
+					<p>Sign up</p>
+				</div>
+				<div id="feedback" class="footer-tab">
+						<img class="icon" src="../images/icons/tools/feedback.png">
+					<p>Feedback</p>
+				</div>
+				<a href="../contact/contact.html">
+					<div id="contact-us" class="footer-tab">
+							<img class="icon" src="../images/icons/tools/contact.png">
+							<p>Contact us</p>
+					</div>
+				</a>
+			</div>
+
+			<div id="terms">
+				<a href="../terms_of_use.pdf"> TERMS OF USE </a>
+			</div>
+
+			</div>
+
+			<div id="sign-up-popup">
+				<img class="sign-up-pop1" src="../images/pop1.png">
+				<img class="sign-up-icon" src="../images/icons/tools/account-new-lblue.png">
+				<img class="sign-up-pop2" src="../images/pop3.png">
+				<p><span class="first_letter">F</span>eature<br />
+					<span class="first_letter">C</span>oming<br />
+					<span class="first_letter">S</span>oon!
+				<img class="sign-up-pop3" src="../images/pop2.png">
+				<img class="sign-up-pop4" src="../images/pop1.png">
+				<div class="sign-up-lines" style="background-color:#F47D1F;"></div>
+				<div class="sign-up-lines" style="background-color:#3C9BD5;"></div>
+				<div class="sign-up-lines" style="background-color:#1E4389;"></div>
+				<div class="sign-up-circle">
+					<img class="sign-up-logo" src="../images/logo.png">
+				</div>
+			</div>
+
+			<div id="feedback-popup">
+				<div id="feedback-tag"></div>
+
+				<div id="feedback-content">
+
+					<h1 class="feedback-header"> <span class="first_letter">G</span>ive <span class="first_letter">F</span>eedback </h1>
+
+					<form id="feedback-form">
+						<p class="feedback-question"> Did you enjoy the Web Experience? </p>
+						<label class="button_container"> YES
+							<input type="radio" checked="checked" name="radio" value="yes">
+							<span class="checkmark"></span>
+						</label>
+						<label class="button_container"> NO
+							<input type="radio" name="radio" value="no">
+							<span class="checkmark"></span>
+						</label>
+
+						<p class="feedback-question"> Overall, how did you feel about the service you received today? </p>
+						<label class="button_container"> VERY SATSIFIED
+							<input type="radio"  name="radio2" value="very_satisfied">
+							<span class="checkmark"></span>
+						</label>
+						<label class="button_container"> SATISFIED
+							<input type="radio" name="radio2" value="satisfied">
+							<span class="checkmark"></span>
+						</label>
+						<label class="button_container"> NEITHER SATISFIED OR DISSATISFIED
+							<input type="radio" checked="checked" name="radio2" value="neither">
+							<span class="checkmark"></span>
+						</label>
+						<label class="button_container"> DISSATISFIED
+							<input type="radio" name="radio2" value="dissatisfied">
+							<span class="checkmark"></span>
+						</label>
+						<label class="button_container"> VERY DISSATISFIED
+							<input type="radio" name="radio2" value="very_dissatisfied">
+							<span class="checkmark"></span>
+						</label>
+
+						<img id="feedback-logo" src="../images/logo.png">
+
+						<p class="feedback-question"> How could we improve our service? </p>
+						<input class="feedback-message" type="text">
+
+						<input class="feedback-submit" type="feedback_submit" value="SEND">
+
+					</form>
+
+				</div>
+
+				<div id="feedback-tag"></div>
+			</div>
+  </body>
+</html>

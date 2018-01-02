@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mosbys Popcorn</title>
+        <script src="../fonts/gloria-font.js"></script>
+        <script src="../jquery-3.2.1.js"></script>
+        <script src="../jquery-popup-overlay/jquery.popupoverlay.js"></script>
+        <link rel="stylesheet" href="contact-style.css">
+        <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+    </head>
+    <body>
+
+      <div id="header">
+  			<div id="tabs">
+  				<div id="logo_circle">
+  					<a href="../index.html"><img class="tab_logo" src="../images/logo.png" /></a>
+  				</div>
+  				<button type="button" class="tab"> <a href="../index.html"> Home </a> </button>
+  				<button type="button" class="tab"> <a href="../shop/shop.html"> Shop </a> </button>
+  				<button type="button" class="tab"><a href="../social/social.html">Social Pop</a></button>
+  				<button type="button" class="tab"><a href="../contact/contact.html">Contact</a><div class="underline"></div></button>
+  			</div>
+
+  			<!-- <div id="search">
+  				<img class="search_icon" src="../images/icons/tools/search.png">
+  				<input class="searchbox" type="search">
+  			</div> -->
+  			<div id="bag">
+  				<p id="notification">0</p>
+  				<img id="bag_icon" src="../images/icons/tools/bag.png">
+  			</div>
+  			<!-- <div id="account">
+  				<a href="../account/account.html"><img class="icon" src="../images/icons/tools/account-new.png"></a>
+  			</div> -->
+
+        <img class="header_popcorn" src="../images/white_pop1.png">
+
+  		</div>
+
+    <div id="main-wrapper">
+        <img id="popcorn1" class=" pop3 animated pulse infinite" src="../images/pop3.png">
+        <img id="logo" src="../images/logo.png">
+        <img id="popcorn2" class="pop1 animated pulse infinite" src="../images/pop1.png">
+
+    <div id="contact-us-wrapper">
+        <h1 id="title">Contact Us</h1>
+        <h3 class="subtitle">Thank you for visiting Mosby's Popcorn</h3>
+        <p id="contact-us">
+            Please contact us if you have additional questions <br />
+            about Mosby's or our product.  You can leave a <br />
+            comment on the feedback page telling us what we can do to <br />
+            help better understand our customers and improve our products!
+        </p>
+        <h3 class="subtitle">Thank You!</h3>
+        <p id="thoughts">Share Your Thoughts</p>
+
+        <div id="message-wrapper">
+
+          <img id="popcorn3" class="pop2 animated pulse infinite" src="../images/pop2.png">
+          <img id="popcorn4" class="pop1 animated pulse infinite" src="../images/pop1.png">
+
+            <form action="send-email.php" method="POST">
+                <div id="message-options">
+                    <input id="radio-fundraising"class="message-type" name="type" type="radio" value="fundraising"></input>
+                    <label for="radio-fundraising">FUNDRAISING</label>
+
+                    <input id="radio-partner" class="message-type" name="type" type="radio" value="partnering"></input>
+                    <label for="radio-partner">PARTNERING</label>
+
+                    <input id="radio-other" class="message-type" name="type" type="radio" value="other"></input>
+                    <label for="radio-other">OTHER</label>
+                </div>
+
+                <input id="name" class="contact-input" type="text" name="name" placeholder="NAME">
+                <input id="email" class="contact-input" type="text" name="email" placeholder="EMAIL"><br>
+                <textarea id="message" class="contact-input" type="text" name="message" placeholder="YOUR MESSAGE"></textarea><br>
+                <input id="submit" name="submit" type="submit">
+            </form>
+        </div>
+
+    </div>
+
+
+    </body>
+</html>

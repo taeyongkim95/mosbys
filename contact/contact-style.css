@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+@font-face {
+	font-family: 'Gloria';
+	src: url('fonts/gloria.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+/********** Main Page Configuration **********/
+* {
+	font-family: 'Nunito';
+}
+
+
+a:link {
+	text-decoration: none;
+	color:white;
+}
+
+a:visited {
+	text-decoration: none;
+	color:white;
+}
+
+.first_letter {
+	font-family: 'Gloria';
+}
+
+
+/********** Header ***********/
+#header {
+	height: 100px;
+	top: 5px;
+	background-color: #F47D1F;
+	display: flex;
+	flex-direction: row;
+	min-width: 800px;
+}
+
+#tabs {
+	display: flex;
+	width: 50%;
+}
+
+.tab {
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+	border-style: none;
+	height: 100px;
+	width:180px;
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 200px;
+	background-color: #F47D1F;
+	position: relative;
+	left:15%;
+}
+
+.tab_logo {
+	color: white;
+	border-style: none;
+	height: 58px;
+	position: relative;
+	top: 5px;
+	left:2px;
+}
+
+#logo_circle {
+	height:70px;
+	width:70px;
+	border-radius: 50%;
+	background-color: white;
+	z-index:2;
+	margin-top: 15px;
+	left:25px;
+	position:absolute;
+}
+
+#search {
+	display: flex;
+	position: relative;
+	width: 250px;
+	height: 30px;
+	top: 34px;
+	left: 230px;
+	margin-right:150px;
+}
+
+.searchbox {
+	width:200px;
+	font-weight: 500;
+	color:#1E4389;
+	font-size: 22px;
+}
+
+#account {
+	position: relative;
+	display: flex;
+	width: 200px;
+	height: 60px;
+	padding-top:18px;
+	left:100px;
+}
+
+#notification {
+	position: relative;
+	left:70px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+
+#sign-up p {
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.underline {
+	background-color: white;
+	width: 100%;
+	margin:auto;
+	height:3px;
+}
+
+#bag {
+	position:relative;
+	display:flex;
+	width:100px;
+	left:470px;
+	top:18px;
+	margin-right: 90px;
+}
+
+#bag_icon {
+	width:70px;
+	height:55px;
+	margin-left: 30px;
+}
+
+.header_popcorn {
+	height:90px;
+	width:90px;
+	display:flex;
+	margin-left: 450px;
+}
+
+.tab {
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+/********** Icons **********/
+.icon {
+	position: relative;
+	width: 60px;
+}
+
+.search_icon {
+	position:relative;
+	width: 35px;
+	padding-right: 15px;
+}
+
+/********** MAIN WRAPPER **********/
+#title, #contact-us {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#logo {
+	position: relative;
+	top: 100px;
+	padding-right: 220px;
+	padding-left: 50px;
+  height: 400px;
+}
+
+#contact-us-wrapper {
+    border-left: solid 5px #F47D1F;
+    padding-left: 30px;
+}
+
+#main-wrapper {
+    width: 1200px;
+    position: relative;
+    display: flex;
+    margin: auto;
+	top: 50px;
+	right: 100px;
+}
+
+#main-wrapper #title {
+    font-size: 60px;
+    color: #F47D1F;
+}
+
+#main-wrapper .subtitle {
+    color: #1E4389;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#main-wrapper #contact-us {
+    color: #1E4389;
+    font-size: 20px;
+}
+
+#thoughts {
+    color: #F47D1F;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.message-type {
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    color: #1E4389;
+    margin-bottom: 20px;
+}
+
+#message-options label {
+    font-size: 20px;
+    color: #1E4389;
+    font-weight: bold;
+}
+
+
+#name, #email {
+    width: 250px;
+}
+
+#message {
+    width: 530px;
+}
+
+
+/********** Contact Us **********/
+.contact-input {
+    padding-left: 10px;
+    margin: 5px;
+	font-size: 15px;
+	color: black;
+	font-weight: bold;
+	border: 2px solid #1E4389;
+}
+
+#message-wrapper #message {
+    height: 100px;
+}
+
+.user-info::placeholder {
+	color: black;
+	font-weight: bold;
+}
+
+#radio-fundraising {
+    margin-left: 0px;
+}
+
+#submit {
+    background-color: #1E4389;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    position: relative;
+    left: 475px;
+		cursor:pointer;
+}
+
+input[type='radio']:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -25px;
+	left: -5px;
+	position: relative;
+	background-color: white;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid #1E4389;
+	cursor: pointer;
+}
+
+input[type='radio']:checked:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -25px;
+	left: -5px;
+	position: relative;
+	background-color: #F47D1F;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid #1E4389;
+	cursor: pointer;
+}
+
+/******* Animated Popcorn ********/
+.pop1 {
+	width: 120px;
+	height: 120px;
+	position: absolute;
+}
+
+.pop2 {
+	width: 150px;
+	height: 170px;
+	position: absolute;
+}
+
+.pop3 {
+	height: 160px;
+	width: 130px;
+	position: absolute;
+}
+
+#popcorn1 {
+	top: -10%;
+	left:-5%;
+}
+
+#popcorn2 {
+	top:75%;
+	left:44%;
+}
+
+#popcorn3 {
+	top: -10%;
+	right:-20%;
+}
+
+#popcorn4 {
+	right:-22%;
+	top:70%;
+}
+
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Daniel Eden
+ */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+	@-webkit-keyframes bounce {
+	  from, 20%, 53%, 80%, to {
+	    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	    -webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0); }
+	  40%, 43% {
+	    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    -webkit-transform: translate3d(0, -30px, 0);
+	    transform: translate3d(0, -30px, 0); }
+	  70% {
+	    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    -webkit-transform: translate3d(0, -15px, 0);
+	    transform: translate3d(0, -15px, 0); }
+	  90% {
+	    -webkit-transform: translate3d(0, -4px, 0);
+	    transform: translate3d(0, -4px, 0); } }
+
+	@keyframes bounce {
+	  from, 20%, 53%, 80%, to {
+	    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	    -webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0); }
+	  40%, 43% {
+	    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    -webkit-transform: translate3d(0, -30px, 0);
+	    transform: translate3d(0, -30px, 0); }
+	  70% {
+	    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    -webkit-transform: translate3d(0, -15px, 0);
+	    transform: translate3d(0, -15px, 0); }
+	  90% {
+	    -webkit-transform: translate3d(0, -4px, 0);
+	    transform: translate3d(0, -4px, 0); } }
+
+	.bounce {
+	  -webkit-animation-name: bounce;
+	  animation-name: bounce;
+	  -webkit-transform-origin: center bottom;
+	  -ms-transform-origin: center bottom;
+	  transform-origin: center bottom; }
+
+		/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+		@-webkit-keyframes pulse {
+		  from {
+		    -webkit-transform: scale3d(1, 1, 1);
+		    transform: scale3d(1, 1, 1); }
+		  50% {
+		    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+		    transform: scale3d(1.05, 1.05, 1.05); }
+		  to {
+		    -webkit-transform: scale3d(1, 1, 1);
+		    transform: scale3d(1, 1, 1); } }
+
+		@keyframes pulse {
+		  from {
+		    -webkit-transform: scale3d(1, 1, 1);
+		    transform: scale3d(1, 1, 1); }
+		  50% {
+		    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+		    transform: scale3d(1.05, 1.05, 1.05); }
+		  to {
+		    -webkit-transform: scale3d(1, 1, 1);
+		    transform: scale3d(1, 1, 1); } }
+
+		.pulse {
+		  -webkit-animation-name: pulse;
+		  animation-name: pulse; }
