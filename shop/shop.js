@@ -1,5 +1,5 @@
 // Written by Jacob Craffey and Taeyong Kim
-// Uses JQuery 
+// Uses JQuery
 
 $(document).ready(function(){
 
@@ -179,6 +179,9 @@ $(document).ready(function(){
     { name: 'Maple Caramel',
     description: '',
     image: '../images/icons/maple_caramel.png'},
+    { name: 'Caramel Butter',
+    description: '',
+    image: '../images/icons/white_icons/flavors/caramel_butter.png'},
   ]
 
 

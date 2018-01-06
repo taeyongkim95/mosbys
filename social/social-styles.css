@@ -121,7 +121,7 @@ a:visited {
 /* underlines active page */
 .underline {
 	background-color: white;
-	width: 70%;
+	width: 100%;
 	margin:auto;
 	height:3px;
 }
@@ -775,7 +775,7 @@ input[type=submit] {
 	position: absolute;
 	float: left;
 	justify-content: center;
-	margin-top:28%;
+	margin-top:34%;
 	width:50%;
 }
 
@@ -799,8 +799,8 @@ input[type=submit] {
 .amount-radio {
 	position: relative;
 	top: 40px;
-	left:-70px;
-	margin-bottom:30px;
+	right:7%;
+	margin-bottom:40px;
 }
 
 .amount-button{
@@ -832,8 +832,8 @@ input[type=submit] {
 #payment-type {
 	position: absolute;
 	width: 800px;
-	margin-top:40%;
-	left:21%;
+	margin-top:45%;
+	left:25%;
 }
 
 .donate-payment {
@@ -843,7 +843,7 @@ input[type=submit] {
 
 .donate-radio {
 	position: relative;
-	top: 15px;
+	top: 10px;
 	left: 55px;
 	margin-bottom: 50px;
 }
